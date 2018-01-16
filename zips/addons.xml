@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.elysium" version="2017.11.12" name="Elysium" provider-name="Elysium">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="script.elysium.artwork" version="2017.06.27"/>
+        <import addon="script.module.urlresolver" version="2.10.0"/>
+        <import addon="script.module.metahandler" version="2.9.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.schism.common" version="2017.06.08"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.nanscrapers" version="0.5.35"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="elysium.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elysium movies and TV shows</summary>
+        <description lang="en">Watch movies and TV shows in high quality! Please note that this addon is not an official part of the Kodi media player and is therefore not to be mentioned within Kodi's official support channels. This addon has nothing to do with the media player itself, nor its intended use, it is simply a third party plugin which has been added to your system.</description>
+        <disclaimer lang="en">The author does not host any content, nor is he affiliated with any of the content providers.</disclaimer>
+        <platform>all</platform>
+        <news>Added Hebrew language strings (thanks Dambledore) / Added a bunch of lists (thanks Soulless and Griffin) / Fixed tools opening up wrong settings section / New api-key. Please get your own asap as it will become mandatory in next update / Switched to NanScrapers (thanks Midraal)</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.futurplayer" name="Sky Q" version="1.1" provider-name="Si">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.urlresolver" version="1.2.0" />
+		<import addon="plugin.video.SportsDevil" version="2017.03.28.NL1115" />
+		<import addon="plugin.video.ourmatch" version="2.0.2" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">The Future of Entertainment</summary>
+      <summary lang="he">הרחבת וידאו Jen</summary>
+      <description lang="en">Future Player</description>
+      <description lang="he">האחות הקטנה של בוב</description>
+      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+      <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+      <platform>all</platform>
+        <website>www.noobsandnerds.com</website>
+        <video_guide>xtOqLY5PJDY</video_guide>
+    </extension>
+</addon>
+
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="2.5.6" provider-name="CaptainT, Cas, ihurst, primaeval">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.requests" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV and Radio from BBC iPlayer</summary>
+    <description lang="en">This add-on enables playing of Live and Catchup TV (UK only) and Radio content (UK or international) from the BBC iPlayer website. It is not created, maintained or in any way affiliated with the BBC. The add-on only provides an interface to access the BBC iPlayer website from Kodi.</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=239378</forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/vonH/plugin.video.iplayerwww</source>
+    <disclaimer>This add-on is a front end to the BBC iPlayer website. It is not an official BBC product. A UK TV Licence is required to watch the live, catch-up, or on-demand TV content.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2017.11.22" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.19.0"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="nbcsn.py">
+        <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Watch NBCSN Live Extra</summary>
+    <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ourmatch" name="Our Match" version="2.0.2" provider-name="Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver"/>
+        <import addon="script.module.echo"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Support: https://github.com/Colossal1/plugin.video.ourmatch/issues/ - Football highlights from around the world</summary>
+		<description>Watch football highlights.</description>
+		<disclaimer lang="en">The author is not responsible for the media you find in this add-on.</disclaimer>
+	</extension>
+
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2017.11.26"
+  name="SportsDevil"
+  provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <!-- <import addon="script.video.F4mProxy" /> -->
+   <!-- <import addon="plugin.video.f4mTester" /> -->
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil addon</summary>
+    <description lang="en">Play videos of different ad-financed sports streaming sites.</description>
+    <description lang="he">נגן סרטונים של אתרי ספורט שונים הממומנים על ידי מודעות.</description>
+    <disclaimer lang="en">SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site. For updates - check the readme.</disclaimer>
+    <disclaimer lang="he">SportsDevil אינו מספק שום הזרמה; איכות הזרם, התוכן וזכויות היוצרים הם באחריות אתר האינטרנט הממומן על ידי המודעה. לעדכונים בדוק את קובץ readme</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.the-loop" name="The Loop" version="1.0.0" provider-name="Munkee, midraal">
+        <requires>
+                <import addon="xbmc.python" version="2.19.0" />
+                <import addon="script.module.nanscrapers" version="0.5.5" />
+                <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+                <import addon="script.module.liveresolver" version="0.1.47" />
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.requests" version="2.9.1" />
+                <import addon="script.module.addon.common" version="2.0.0" />
+                <import addon="script.module.xmltodict" version="0.9.0"/>
+                <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+                <import addon="script.module.urlresolver" version="1.2.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+                <provides>video</provides>
+        </extension>
+        <extension point="xbmc.service" library="service.py" start="[login|startup]">
+              </extension>
+        <extension point="xbmc.addon.metadata">
+          <summary lang="en">The Loop</summary>
+          <description lang="en">The Loop is a Sports addon made with the Jen template which is derived from BOB. Thanks to Midraal and Thunder for all their help and endless advice and support with this </description>
+          <platform>all</platform>
+          <forum>http://www.noobsandnerds.com/support/forumdisplay.php?fid=253</forum>
+          <website>www.noobsandnerds.com</website>
+          <video_guide>y0w8zIH4lOY</video_guide>
+          <video_preview>WdKIzajiBBI</video_preview>
+        </extension>
+</addon>
+
+<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2.3.0" provider-name="noobsandnerds">
+        <extension point="xbmc.addon.repository" name="noobsandnerds Repository">
+                <dir>
+                        <info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+                        <checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+                </dir>
+                <dir>
+                        <info compressed="true">https://github.com/dandy0850/dandymedia/raw/master/addons.xml</info>
+                        <checksum>https://github.com/dandy0850/dandymedia/raw/master/addons.xml.md5</checksum>
+                        <datadir zip="true">https://github.com/dandy0850/dandymedia/raw/master/repo</datadir>
+                </dir>
+                <dir>
+                        <info compressed="true">https://github.com/dandy0850/dandymedia/raw/master/addons.xml</info>
+                        <checksum>https://github.com/dandy0850/dandymedia/raw/master/addons.xml.md5</checksum>
+                        <datadir zip="true">https://github.com/dandy0850/dandymedia/raw/master/repo</datadir>
+                </dir>
+                <dir>
+                        <info compressed="false">https://raw.githubusercontent.com/alfreddempsey3/repository.rage/master/zips/addons.xml</info>
+                        <checksum>https://raw.githubusercontent.com/alfreddempsey3/repository.rage/master/zips/addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.githubusercontent.com/alfreddempsey3/repository.rage/master/zips/</datadir>
+                </dir>
+                <dir>
+                        <info compressed="false">https://raw.githubusercontent.com/bromerzz/repository.bromcy/master/zips/addons.xml</info>
+                        <checksum>https://raw.githubusercontent.com/bromerzz/repository.bromcy/master/zips/addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.githubusercontent.com/bromerzz/repository.bromcy/master/zips/</datadir>
+                        </dir>
+                <dir>
+                        <info compressed="false">https://github.com/OpenELEQ/repository.elysium/raw/master/elysium.xml</info>
+                        <checksum>https://github.com/OpenELEQ/repository.elysium/raw/master/elysium.xml.md5</checksum>
+                        <datadir zip="true">https://raw.github.com/OpenELEQ/repository.elysium/master/</datadir>
+                </dir>
+                        <dir>
+                        <info compressed="true">https://raw.githubusercontent.com/catchup4kodi/catchup4kodi/master/zips/addons.xml</info>
+                        <checksum>https://raw.githubusercontent.com/catchup4kodi/catchup4kodi/master/zips/addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.githubusercontent.com/catchup4kodi/catchup4kodi/master/zips/</datadir>
+                </dir>
+                <dir>
+                        <info compressed="false">https://raw.githubusercontent.com/midraal/repository.midraal/master/zips/addons.xml</info>
+                        <checksum>https://raw.githubusercontent.com/midraal/repository.midraal/master/zips/addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.github.com/midraal/repository.midraal/master/zips/</datadir>
+                </dir>
+                <dir minversion="14.0.0">
+                        <info compressed="false">https://github.com/OpenELEQ/repository.q/raw/master/openeleq-addons.xml</info>
+                        <checksum>https://github.com/OpenELEQ/repository.q/raw/master/openeleq-addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.github.com/OpenELEQ/repository.q/master/zips/</datadir>
+                </dir>
+                <dir minversion="16.0.0">
+                        <info compressed="false">https://github.com/OpenELEQ/repository.q.jarvis/raw/master/openeleq-addons.xml</info>
+                        <checksum>https://github.com/OpenELEQ/repository.q.jarvis/raw/master/openeleq-addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.github.com/OpenELEQ/repository.q.jarvis/master/zips/</datadir>
+                </dir>
+                <dir minversion="16.9.9">
+                        <info compressed="false">https://github.com/OpenELEQ/repository.q.krypton/raw/master/openeleq-addons.xml</info>
+                        <checksum>https://github.com/OpenELEQ/repository.q.krypton/raw/master/openeleq-addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.github.com/OpenELEQ/repository.q.krypton/master/zips/</datadir>
+                </dir>
+                <info compressed="false">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Home of The Community Portal</summary>
+                <description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+<addon id="repository.SkyQ" name="Sky Q repo" version="0.0.1" provider-name="GTM">
+	<extension point="xbmc.addon.repository" name="Sky Q Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/gtmnyc/repository.SkyQ/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/gtmnyc/repository.SkyQ/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/gtmnyc/repository.SkyQ/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Sky Q repo</summary>
+		<description lang="en">Sky Q</description>
+		<genre></genre>
+	</extension>
+</addon>
+</addons>

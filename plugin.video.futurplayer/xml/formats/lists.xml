@@ -1,0 +1,13 @@
+<dir>
+  <title>My lists</title>
+  <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+</dir>
+
+
+<dir>
+  <title>Match of the Day</title>
+  <trakt>https://api.trakt.tv/users/documentaryrepo/lists/fg-car-shows/items</trakt>
+  <thumbnail>http://i.imgur.com/pVRZGMj.png</thumbnail>
+  <fanart>http://i.imgur.com/FJDZ13h.png</fanart>
+  <content></content>
+</dir>
